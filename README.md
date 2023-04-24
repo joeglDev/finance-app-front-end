@@ -11,4 +11,3 @@
 - next.js
 - Highcharts
 - C# backend server (coming soon)
-
