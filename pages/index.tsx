@@ -2,6 +2,8 @@ import {
   MainText,
   SecondaryTitle,
   Title,
+  ListAsGridContainer,
+  Card,
 } from "../components/StyledComponents";
 
 const HomePage = () => {
@@ -12,17 +14,17 @@ const HomePage = () => {
 
   return (
     <>
+      <Title>Personal Savings Tracker</Title>
+      <MainText>{paragraphContent}</MainText>
+      <SecondaryTitle>
+        Some of the technologies I used to make this include:
+      </SecondaryTitle>
       <section>
-        <Title>Personal Savings Tracker</Title>
-        <MainText>{paragraphContent}</MainText>
-        <SecondaryTitle>
-          Some of the technologies I used to make this include:
-        </SecondaryTitle>
-        <ul>
+        <ListAsGridContainer>
           {techArr.map((tech) => {
-            return <li>{tech}</li>;
+            return <Card>{tech}</Card>;
           })}
-        </ul>
+        </ListAsGridContainer>
       </section>
     </>
   );
