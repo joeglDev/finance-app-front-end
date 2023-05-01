@@ -1,3 +1,4 @@
+import { NavBar } from "../components/NavBar";
 import {
   MainText,
   SecondaryTitle,
@@ -14,6 +15,7 @@ const HomePage = () => {
 
   return (
     <>
+      <NavBar></NavBar>
       <Title>Personal Savings Tracker</Title>
       <MainText>{paragraphContent}</MainText>
       <SecondaryTitle>
