@@ -1,35 +1,11 @@
-import { NavBar } from "../components/NavBar";
-import {
-  MainText,
-  SecondaryTitle,
-  Title,
-  ListAsGridContainer,
-  Card,
-} from "../components/StyledComponents";
+import About from "./About";
 
-const HomePage = () => {
-  const paragraphContent = `An app to help you keep track of how your investments change over time. 
-    For example, tracking how ISAs factors such as inflation and interest rates impact your  capitol.`;
-
-  const techArr = ["next.js", "TypeScript", "React", "Styled Components"];
-
+const App = () => {
   return (
     <>
-      <NavBar></NavBar>
-      <Title>Personal Savings Tracker</Title>
-      <MainText>{paragraphContent}</MainText>
-      <SecondaryTitle>
-        Some of the technologies I used to make this include:
-      </SecondaryTitle>
-      <section>
-        <ListAsGridContainer>
-          {techArr.map((tech) => {
-            return <Card>{tech}</Card>;
-          })}
-        </ListAsGridContainer>
-      </section>
+      <About></About>
     </>
   );
 };
 
-export default HomePage;
+export default App;
