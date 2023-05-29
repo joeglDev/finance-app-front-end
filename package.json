@@ -10,8 +10,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown",
-    "**/*.ts": "tsc-files --noEmit --pretty"
+    "**/*": "prettier --write '**/*.{js,ts,jsx,tsx,md}'"
   },
   "devDependencies": {
     "@types/node": "^18.16.0",
