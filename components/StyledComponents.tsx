@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colours } from "./colours.constants";
 
 export const Title = styled.h1`
   text-align: center;
@@ -28,11 +29,11 @@ export const ListAsGridContainer = styled.ul`
 `;
 
 export const Card = styled.li`
-  background-color: #f2eecb;
+  background-color: ${Colours.BACKGROUND_BROWN}
   list-style: none;
   width: 80%;
   padding: 5%;
   &:hover {
-    background-color: lightblue;
+    background-color: ${Colours.HIGHLIGHT};
   }
 `;
