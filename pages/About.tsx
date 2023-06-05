@@ -16,7 +16,7 @@ const About = () => {
   return (
     <>
       <NavBar></NavBar>
-      <Title>Personal Savings Tracker</Title>
+      <Title>Personal savings tracker</Title>
       <MainText>{paragraphContent}</MainText>
       <SecondaryTitle>
         Some of the technologies I used to make this include:
